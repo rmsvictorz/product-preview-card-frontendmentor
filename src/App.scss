@@ -1,0 +1,85 @@
+
+
+.card {
+    margin: 1rem;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: var(--white);
+    border-radius: var(--border-radius);
+
+    img {
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        padding: 2.5rem 2rem 2rem 2rem;
+        flex-direction: column;
+        gap: 1.2rem;
+        span {
+            color: var(--dark-grayish-blue);
+        }
+        h1 {
+            font-size: 2rem;
+            line-height: 1.9rem;
+            font-family: 'Fraunces';
+            color: var(--very-dark-blue);
+        }
+        p {
+            color: var(--dark-grayish-blue);
+            font-size: 0.9rem;
+        }
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            strong {
+                font-size: 2rem;
+                font-family: 'Fraunces';
+                color: var(--dark-cyan);
+            }
+            span {
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    button {
+        background: var(--dark-cyan);
+        display: flex;
+        width: 100%;
+        color: var(--white);
+        justify-content: center;
+        gap: 1rem; outline: none;
+        border: none;
+        border-radius: var(--border-radius);
+        padding: 1rem 0;
+        font-weight: 700;
+        img {
+            width: 1rem;
+        }
+    }
+}
+
+
+@media screen and ( min-width: 375px ) {
+    .card {
+        max-width: 37.5rem;
+        flex-direction: row;
+        height: 28.125rem;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        display: flex;
+        .content {
+            gap: 1.6rem;
+        }
+        img {
+            height: 100%;
+            width: auto;
+        }
+        button:hover {
+            background: var(--dark-cyan-accent);
+        }
+    }
+}
