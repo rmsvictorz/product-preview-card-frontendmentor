@@ -13,27 +13,32 @@
     }
 
     .content {
-        display: flex;
-        padding: 2.5rem 2rem 2rem 2rem;
-        flex-direction: column;
         gap: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem 2rem 2rem 2rem;
         span {
             color: var(--dark-grayish-blue);
         }
+        .sub {
+            font-size: .8rem;
+            letter-spacing: .3rem;
+        }
         h1 {
             font-size: 2rem;
-            line-height: 1.9rem;
+            line-height: 2rem;
             font-family: 'Fraunces';
             color: var(--very-dark-blue);
         }
         p {
-            color: var(--dark-grayish-blue);
             font-size: 0.9rem;
+            line-height: 1.5rem;
+            color: var(--dark-grayish-blue);
         }
         .price {
+            gap: 1rem;
             display: flex;
             align-items: center;
-            gap: 1rem;
             strong {
                 font-size: 2rem;
                 font-family: 'Fraunces';
@@ -46,16 +51,17 @@
     }
 
     button {
-        background: var(--dark-cyan);
-        display: flex;
         width: 100%;
+        border: none;
+        display: flex;
+        padding: 1rem 0;
+        font-weight: 700;
+        font-size: .9rem;
         color: var(--white);
         justify-content: center;
         gap: 1rem; outline: none;
-        border: none;
+        background: var(--dark-cyan);
         border-radius: var(--border-radius);
-        padding: 1rem 0;
-        font-weight: 700;
         img {
             width: 1rem;
         }
@@ -65,18 +71,18 @@
 
 @media screen and ( min-width: 375px ) {
     .card {
+        display: flex;
+        overflow: hidden;
+        height: 28.125rem;
         max-width: 37.5rem;
         flex-direction: row;
-        height: 28.125rem;
         border-radius: var(--border-radius);
-        overflow: hidden;
-        display: flex;
         .content {
-            gap: 1.6rem;
+            gap: 1.4rem;
         }
         img {
-            height: 100%;
             width: auto;
+            height: 100%;
         }
         button:hover {
             background: var(--dark-cyan-accent);

@@ -12,7 +12,7 @@ function App() {
         <img src="/image-product-desktop.jpg" alt="image product" />
       </picture>
       <section className='content'>
-        <span>PERFUME</span>
+        <span className='sub'>PERFUME</span>
         <h1>Gabrielle Essence Eau De Parfum</h1>
         <p>
           A floral, solar and voluptuous interpretation compose by Oliver Polge, Perfumer-Creator fot the House of CHANEL 
